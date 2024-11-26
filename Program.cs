@@ -34,7 +34,7 @@ namespace TelegramBotUtility
                 services.AddTransient<InlineKeyboardController>();
 
                 // Регистрируем объект TelegramBotClient c токеном подключения
-                services.AddSingleton<ITelegramBotClient>(provider => new TelegramBotClient("secret"));
+                services.AddSingleton<ITelegramBotClient>(provider => new TelegramBotClient("secrets "));
                 // Регистрируем постоянно активный сервис бота
                 services.AddHostedService<Bot>();          
             }
